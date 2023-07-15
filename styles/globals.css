@@ -1,0 +1,227 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* home */
+.homeContainer {
+  background-color: #d0d0d0;
+  height: 100vh;
+}
+
+/* header */
+.headerContainer {
+  background-color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+
+  .endContainer {
+    padding-right: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+  .inputContent {
+    width: 420px;
+    height: 50px;
+    border-radius: 10px;
+    border: 5px solid #d0d0d0;
+    cursor: pointer;
+    padding: 0 30px;
+
+    & input {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      font-size: 22px;
+      color: #000;
+    }
+  }
+
+  .navButton {
+    width: 150px;
+    height: 50px;
+    background-color: #d0d0d0;
+    border-radius: 10px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+
+  .loginButton {
+    margin-left: 100px;
+  }
+
+  .profileContent {
+    padding-right: 50px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .profile {
+      width: 60px;
+      height: 60px
+    }
+  }
+}
+
+
+/* bookList */
+.bookListContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 20px; 
+  padding: 20px 30px 20px 100px;
+}
+
+.bookCard {
+  width: 180px;
+  height: 240px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 5px solid #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+}
+
+.delButton {
+  position: absolute;
+  right: 10px;
+  top:10px;
+  color: red;
+}
+
+.footerContainer {
+  bottom: 20px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+}
+
+/* message */
+.message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #f0f0f0;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.message .success {
+  color: green;
+}
+
+.message .show {
+  opacity: 1;
+}
+
+.message .hide {
+  opacity: 0;
+}
+
+.success {
+  background-color: #52c41a;
+  color: #fff;
+}
+
+.error {
+  background-color: #f5222d;
+  color: #fff;
+}
+
+.warning {
+  background-color: #faad14;
+  color: #fff;
+}
+
+.info {
+  background-color: #1890ff;
+  color: #fff;
+}
+
+/* dropDown */
+.custom-dropdown {
+  position: relative;
+  z-index: 1000;
+}
+
+.custom-dropdown ul {
+  background-color: lightgray ;
+  border-radius: 5px;
+  position: absolute; 
+  top: 80%;
+  left: -30%;
+  width: 100px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  list-style-type: none;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.custom-dropdown.open ul {
+  max-height: 200px; 
+}
+
+.custom-dropdown ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* 添加喜欢 */
+
+.selectContainer {
+  .title {
+    font-size: 22px;
+    padding: 5px 0;
+  }
+  .bookName {
+    padding: 5px 0;
+  }
+  .addButton {
+    margin: 20px 0 10px 0;
+    height: 50px;
+    background-color: #d0d0d0;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+
+
+
+

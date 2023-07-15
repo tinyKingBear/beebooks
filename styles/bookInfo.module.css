@@ -1,0 +1,41 @@
+.infoContainer {}
+
+.bookInfo {}
+
+.favoriteUsers {
+  padding: 10px 10px;
+  background-color: #d0d0d0;
+  border-radius: 10px;
+}
+
+.userList {
+  margin-top: 10px;
+  padding: 0 0 10px 0;
+  overflow-y: scroll;
+  max-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.userList::-webkit-scrollbar {
+  display: none;
+}
+.userContent {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 140px;
+  height: 45px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  .profile {
+    width: 35px;
+    height: 35px;
+  }
+  .name {
+    margin-left: 10px;
+  }
+}

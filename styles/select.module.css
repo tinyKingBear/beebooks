@@ -1,0 +1,42 @@
+.dropdownSelect {
+  position: relative;
+}
+
+.selectedOption {
+  padding: 10px 0 10px 10px;
+  height: 100%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 1;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.option {
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.buttonOption {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size:16px;
+}
