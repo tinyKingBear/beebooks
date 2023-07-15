@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios, { AxiosInstance, AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 import { requestBaseURL } from '@/const';
 import Cookies from "js-cookie";
 
@@ -11,7 +11,7 @@ const api: AxiosInstance = axios.create({
 
 // 添加请求拦截器
 api.interceptors.request.use(
-  (config: AxiosRequestConfig) => {
+  (config: InternalAxiosRequestConfig) => {
   // 在发送请求之前做一些处理，例如添加认证信息等
   const token = Cookies.get('token');
   if (token) {
